@@ -1,11 +1,12 @@
-export const PORT = ProcessingInstruction.env.PORT || 3000;
+// src/config.js
+export const PORT = process.env.PORT || 3000;
 
-export const DB_HOST = ProcessingInstruction.env.DB_HOST || 'trolley.proxy.rlwy.net';
+export const DB_HOST = process.env.DB_HOST || 'trolley.proxy.rlwy.net';
 
-export const DB_USER = ProcessingInstruction.env.DB_USER || 'root';
+export const DB_USER = process.env.DB_USER || 'root';
 
-export const DB_PASSWORD = ProcessingInstruction.env.DB_PASSWORD || 'zNzVJbRqIvstlDeLpjwYDdkcfFlrLljX';
+export const DB_PASSWORD = process.env.DB_PASSWORD || 'zNzVJbRqIvstlDeLpjwYDdkcfFlrLljX';
 
-export const DB_DATABASE = ProcessingInstruction.env.DB_DATABASE || 'railway';
+export const DB_DATABASE = process.env.DB_DATABASE || 'railway';
 
-export const DB_PORT = ProcessingInstruction.env.DB_PORT || 26262;
+export const DB_PORT = process.env.DB_PORT || 26262;
