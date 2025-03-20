@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../../imagenes/imagotipo.png" type="image/x-icon">
+        <link href="../moduloComanda/menu.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style_content.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style_tabla.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="parent">
+            <!-- Div1 en la parte superior -->
+            <div class="div1">
+                <!-- Contenido de div1 -->
+            </div>
+
+            <!-- Contenedor para div2 y div3 -->
+            <div class="content">            
+                <!-- Div3 en el lado izquierdo -->
+                <div class="div3">
+                    <div class="header-container">
+                        <h2>Realiza tu pedido</h2>
+                        <button type="button" id="volver" onclick="volver()">
+                            <img id="btnMenu" src="../../../imagenes/flecha-izquierda.png" alt="alt"/>
+                        </button>
+                    </div>
+                    <h4>--Alimentos</h4>
+                    <div class="grid-container" id="alimentosContainer">
+                        <!-- Aquí se generará el contenido dinámicamente -->
+                    </div>
+                    <h4>--Bebidas</h4>
+                    <div class="grid-container" id="bebidasContainer">
+                        <!-- Aquí se generará el contenido dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Div2 en el lado derecho -->
+                <div class="div2">
+                    <div class="tabla">
+                        <h3>Comanda</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Importe</th>
+                                </tr>
+                            </thead>
+                            <tbody id="renglonProducto"></tbody>
+                        </table>
+                        <br>
+                        <div>
+                            <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                            <p>IVA: <span id="iva">$0.00</span></p>
+                            <p>Total: <span id="total">$0.00</span></p>
+                        </div>
+                        <br>
+                        <button type="button" id="btnCancelar" onclick="cancelarPedido()">Cancelar</button>
+                        <button id="btnComprar" type="button" onclick="generarTicket()"><strong>Comprar</strong></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="menu.js"></script>
+    </body>
+</html>

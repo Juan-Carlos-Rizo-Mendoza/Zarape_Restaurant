@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Menú</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_menu_lateral.css" />
+    <link rel="stylesheet" href="css/style_content.css">
+    <link rel="icon" type="image/jpg" href="imagenes/imagotipo.jpg">
+    <link rel="stylesheet" href="css/style_tabla.css"/>
+    <script src="js/main.js"></script>    
+    <script src="js/inicio.js"></script>
+</head>
+
+<body onload="cargarInicio()">
+
+    <!-- Menú Lateral -->
+    <nav class="sidebar" id="menu">
+        <h5>Menú de navegación</h5>
+        <div>
+            <button onclick="window.location.href = 'bienvenida.html';"><img id="logo" src="imagenes/imagotipo-blanco-horizontal.png" alt="logo blanco"></button>
+             <br> <br>
+            <button type="button" onclick="cargarAlimento()"><img src="imagenes/alimento.png" alt="alimento" /> Alimento</button><br>
+            <button type="button" onclick="cargarBebida()"><img src="imagenes/bebida.png" alt="bebida" /> Bebida</button> <br>            
+            <button type="button" onclick=""><img src="imagenes/sucursal.png" alt="sucursal" /> Sucursal</button> <br>
+            <button type="button" onclick=""><img src="imagenes/cliente.png" alt="cliente" /> Cliente</button> <br>
+            <button type="button" onclick="cargarEmpleados()"><img src="imagenes/empleado.png" alt="empleado" />Empleado</button> <br>
+        </div>
+        <img id="imgSesion" src="imagenes/sesion.png" alt="perfil" /> <br>
+        <button type="button" onclick="salir()" >Cerrar Sesión
+        </button>        
+    </nav>
+    <div>
+        <button class="btnMenu" onclick="toggleMenu()">☰</button>
+    
+    
+    <!-- Aquí termina el menú lateral -->
+    <div id="maincontent">
+        <h1>Bienvenido</h1>
+    </div>
+
+    </div>
+</body>
+</html>

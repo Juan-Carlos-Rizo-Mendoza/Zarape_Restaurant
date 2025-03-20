@@ -1,0 +1,88 @@
+<html lang="es">    
+    <!-- Contenido -->    
+    <div class="content">        
+        <h2>Alimentos</h2>
+        <div class="containerInput">
+            <img src="imagenes/buscar.png" alt="buscar">
+            <input type="text" placeholder="Buscar">
+        </div>
+        <br>                        
+
+        <div id="forms">
+            <form>
+                <div class="form-row">
+                    <div class="form-column col-1">
+                        <label>ID</label><br>
+                        <label>Nombre</label><br>
+                        <label>Descripcion</label><br>
+                        <label>Precio</label> <br>
+                    </div>
+                    <div class="form-column col-2">
+                        <input type="text" name="nombre" id="id" disabled> <br>
+                        <input type="text" name="nombre" id="nombre"> <br>
+                        <input type="text" name="descripcion" id="descripcion"> <br>
+                        <input type="number" name="precio" id="precio"
+                               step="0.01" min="0" placeholder="0.00"> <br>
+                    </div>   
+                    <div class="form-column col-3">
+                        <label>Categoria</label> <br>
+                        <label>Foto</label> <br>
+
+
+                    </div>
+                    <div class="form-column col-4">
+                        <select id="categoriasA">
+                            <option value="">Seleccionar</option>
+                        </select> <br>
+                        <input type="file" id="inputFotoBebida" onchange="controladorAlimento.cargarFotografiaAlimento(this)"><br>
+                        <img id="imgFoto" height="200" width="200" src="imagenes/camera.png"><br>
+                        <textarea id="fotoAlimento" name="foto" rows="10" cols="10" style="display: none"></textarea>
+                        <button type="button" id="btnCargarFoto" style="display: none">boton</button>
+                    </div>
+                </div>
+                <button type="button" onclick="controladorAlimento.agregarAlimento()">Añadir</button>
+                <button type="button" onclick="">Actualizar</button>
+                <button type="button" onclick="">Eliminar</button>
+            </form>
+
+            <!-- div del forms -->
+        </div>
+        <br>
+        <div class="tabla">
+            <h3>Activos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Foto</th>
+                        <th>Precio</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+                <tbody id="registrosA">
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="tabla">
+            <h3>Inactivos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Foto</th>
+                        <th>Precio</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+                <tbody id="registrosI">
+
+                </tbody>
+            </table>
+        </div>
+        <br>
+    </div>
+</html>

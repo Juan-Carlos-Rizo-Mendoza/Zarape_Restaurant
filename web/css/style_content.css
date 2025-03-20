@@ -1,0 +1,78 @@
+/* Estilos del botón */
+.btnMenu {
+    position: fixed; /* Lo fijamos en la pantalla, para que permanezca visible al hacer scroll */
+    top: 20px;        /* Ajustamos la distancia desde la parte superior */
+    right: 20px;      /* Ajustamos la distancia desde la parte derecha */
+    padding: 10px;
+    font-size: 30px;   /* Ajustamos el tamaño del icono */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con transparencia (50% opaco) */
+    color: white;      /* Color del icono */
+    border: none;      /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;   /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1000;     /* Asegura que el botón esté por encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto cuando el mouse pasa por encima del botón */
+.btnMenu:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Aumentamos la opacidad al pasar el mouse */
+}
+
+/* Asegúrate de que el body tenga un posicionamiento relativo */
+body {
+    position: relative; /* Importante para que el botón se posicione correctamente */
+}
+
+#maincontent{
+    display: flex;
+    margin-left: 20%;
+}
+
+.contenido{
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 5%;
+    
+}
+
+@media(max-width: 900px){
+    .btnMenu:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Aumentamos la opacidad al pasar el mouse */
+}
+    #maincontent{
+        display: flex;
+        margin-left: 18%;
+    }
+}
+
+
+@media(max-width: 768px){
+    .btnMenu:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Aumentamos la opacidad al pasar el mouse */
+}
+    #maincontent{
+        display: flex;
+        margin-left: 2%;
+    }
+}
+
+@media(max-width: 480px){
+    .btnMenu:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Aumentamos la opacidad al pasar el mouse */
+}
+    #maincontent{
+        display: flex;
+        margin-left: 3%;
+    }
+}
+
+@media(max-width: 360px){
+    .btnMenu:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Aumentamos la opacidad al pasar el mouse */
+}
+    #maincontent{
+        display: flex;
+        margin-left: 2%;
+    }
+}

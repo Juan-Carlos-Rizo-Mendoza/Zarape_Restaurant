@@ -1,0 +1,166 @@
+/* 
+    Created on : 20 ene 2025, 5:22:34 p.m.
+    Author     : saul villeda
+    Version: 1.0
+*/
+
+/*--------------------------------------------------------------------------*/
+
+#id {
+    background-color: #d3d3d3; /* Gris claro */
+    pointer-events: none; /* Desactiva la interacción del usuario */
+    color: #808080; /* Color de texto gris para hacerlo más claro */
+    border: 1px solid #ccc; /* Borde gris claro */
+    width: 200px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+#nombre{
+    background-color: white;
+    border-color: #000000;
+    width: 200px;
+}
+
+/* Cambiar el color cuando el campo es válido */
+#nombre:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Cambiar el color cuando el campo es inválido */
+#nombre:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+/* Cambiar el color cuando el campo es válido */
+#apellidos:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Cambiar el color cuando el campo es inválido */
+#apellidos:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+#apellidos{
+    width: 200px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#telefono:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#telefono:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+#telefono {
+    width: 200px; /* Tamaño fijo del input */
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#estados:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#estados:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+/* Tamaño fijo del select */
+#estados {
+    width: 210px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#ciudades:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#ciudades:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+/* Tamaño fijo del select */
+#ciudades {
+    width: 210px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#sucursales:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#sucursales:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+/* Tamaño fijo del select */
+#sucursales {
+    width: 210px;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#usuario:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#usuario:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+#usuario {
+    width: 200px; /* Tamaño fijo del input */
+}
+
+/*--------------------------------------------------------------------------*/
+
+/* Estilo para un campo válido */
+#contrasenia:valid {
+    border-color: green;
+    background-color: #e0ffe0; /* Verde claro */
+}
+
+/* Estilo para un campo inválido */
+#contrasenia:invalid {
+    border-color: red;
+    background-color: #ffe0e0; /* Rojo claro */
+}
+
+#contrasenia {
+    width: 200px; /* Tamaño fijo del input */
+}

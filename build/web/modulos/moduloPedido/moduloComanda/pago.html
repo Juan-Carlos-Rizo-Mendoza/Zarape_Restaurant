@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../imagenes/imagotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="pago.css"/>
+    <script src="pago.js"></script>
+</head>
+<body onload="">
+    <div id="barra">
+        <button type="button" id="btnImagen" onclick="regresar()">
+            <img id="return" src="../../../imagenes/atras.png" alt="alt"/>
+        </button>
+        <h1 class="texto">Realiza el pago de tu pedido</h1>
+    </div>
+    <div class="contenedor">
+        <h3 id="titulo">Conectando con la terminal espera unos segundos...</h3>
+        <button type="button" onclick="iniciarEscaneo()" id="btnConectar">Conectar</button> <br>
+        <img id="pagoTarjeta" src="../../../imagenes/online-payment_17903979.gif" alt="alt"/><br>
+        <input type="text" id="nip" placeholder="NIP"> <br><br>
+        <button type="button" name="confirmar" id="cancelar" onclick="cancelarTarjeta()"><strong>Cancelar</strong></button>
+        <button type="button" name="confirmar" id="confirmar" onclick="comprobar()"><strong>Confirmar</strong></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagenes/diseño-24.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    padding: 2%;
+}
+
+.contenedor img {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 2%;
+    background-color: #ffffff;
+    border-radius: 0.5em; /* Corregido a un valor válido */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor input[type="text"], input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.5px solid #000000;
+    border-radius: 0.5em; /* Corregido a un valor válido */
+}
+
+.contenedor button {
+    margin-top: 10%;
+    background-color: #FA812F;
+    color: #ffffff;
+    border: none;
+    padding: 2%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #FA4032;
+}
+
+/* Contenedor para el input y el ícono */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding-right: 40px; /* Aumentado el espacio para el ícono */
+    padding-left: 10px;
+    font-size: 16px; /* Ajuste de tamaño de texto para mejor visibilidad */
+    box-sizing: border-box;
+}
+
+#toggleVisibility {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px; /* Tamaño del ícono */
+    color: #000; /* Puedes cambiar el color del ícono si es necesario */
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+@media(max-width: 768px){
+
+    body{
+        background-size: 300%;
+    }
+
+    .contenedor{
+        margin-top: 3%;
+        width: 40%;
+        padding: 5%;
+    }
+
+    .contenedor img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media(max-width: 480px){
+
+    body{
+        background-size: 400%;
+    }
+
+    .contenedor{
+        margin-top: 20%;
+        width: 55%;
+        padding: 7%;
+    }
+
+    .contenedor h1{
+        font-size: 2.5cap;
+    }
+
+    .contenedor img{
+        width: 40%;
+        height: auto;
+    }
+
+
+    
+}
+
+@media(max-width: 360px){
+
+    body{
+        background-size: 600%;
+    }
+
+    .contenedor{
+        margin-top: 20%;
+        width: 55%;
+        padding: 7%;
+    }
+
+    .contenedor h1{
+        font-size: 2.5cap;
+    }
+
+    .contenedor img{
+        width: 40%;
+        height: auto;
+    }
+
+
+    
+}

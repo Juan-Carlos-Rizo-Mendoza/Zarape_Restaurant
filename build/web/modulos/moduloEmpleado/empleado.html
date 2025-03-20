@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">    
+
+    <!-- Contenido -->    
+    <div class="content">        
+        <h2>Empleado</h2>
+        <div class="containerInput">
+            <img src="imagenes/buscar.png" alt="buscar">
+            <input type="text" placeholder="Buscar">
+
+        </div>
+        <br>                        
+
+        <div id="forms">
+            <form>
+                <div class="form-row">
+                    <div class="form-column col-1">
+                        <label for="id">id</label>
+                        <br>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <label for="apellidos">Apellidos</label>
+                        <br>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+
+                    <div class="form-column col-2">
+                        <input type="text" name="id" id="id" disabled>
+                        <br>                        
+                        <input type="text" id="nombre" name="nombre" required minlength="1" maxlength="45"
+                               pattern="^[A-Za-záéíóúÁÉÍÓÚÑñ]+$" placeholder="Solo letras y acentos permitidos." />
+                        <br>                        
+                        <input type="text" id="apellidos" name="apellidos" required minlength="1" maxlength="45"
+                               pattern="^[A-Za-záéíóúÁÉÍÓÚÑñ]+$" placeholder="Solo letras y acentos permitidos." />
+                        <br>                        
+                        <input type="text" id="telefono" name="telefono" required minlength="1" maxlength="45" pattern="^[0-9]+$"
+                               placeholder="xxx-xxx-xxxxx" />
+                        <br>     
+                    </div>
+
+                    <div class="form-column col-3">
+                        <label for="estado">Estado</label>
+                        <br>
+                        <label for="ciudad">Ciudad</label>
+                        <br>
+                        <label for="usuario">Usuario</label>
+                        <br>
+                        <label for="contrasenia">Contraseña</label>
+                        <br>
+                        <label for="sucursal">Sucursal</label> 
+                    </div>
+
+                    <div class="form-column col-4">
+                        <div>
+                            <select id="estados" name="estados" required>
+                                    <option value="">--Selecciona un estado--</option>
+                                    <!-- Los estados se cargarán aquí -->
+                                </select>
+                            </div>
+                        <br>
+                        <div>                                
+                                <select id="ciudades" name="ciudades" required>
+                                    <option value="">--Selecciona un ciudad--</option>
+                                    <!-- Las ciudades se cargarán aquí -->
+                                </select>
+                            </div>
+                        <br>
+                        <input type="text" id="usuario" name="usuario" required minlength="1" maxlength="65"
+                               pattern="^[A-Za-z0-9!@#$%^&*()_+=]+$" title="Solo letras, números y signos permitidos, sin acentos." />
+                        <br>
+                        <input type="password" id="contrasenia" name="contrasenia" required minlength="1" maxlength="65"
+                               title="Solo letras, números y signos permitidos, sin acentos." />
+                        <br>
+                        <select id="sucursales" name="sucursal" required>
+                            <option value="">Seleccionar</option>
+                            <!-- Las sucursales se cargarán aquí -->
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" onclick="controladorEmpleado.agregarEmpleados()">Agregar</button>
+                <button type="button" onclick="controladorEmpleado.actualizarEmpleados()">Actualizar</button>
+                <button type="button" onclick="controladorEmpleado.eliminarEmpleado()">Eliminar</button>
+                
+            </form>
+        </div> <!-- div del forms -->
+        <br>
+
+        <h3>Empleados activos</h3>
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>Ciudad</th>
+                        <th>Sucursal</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                    </tr>
+                </thead> 
+                <tbody id="tablaEmpleadoActivos">
+
+                </tbody>
+            </table>
+
+            <br>
+
+            <h3>Empleados inactivos</h3>
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Teléfono</th>
+                            <th>Ciudad</th>
+                            <th>Sucursal</th>
+                            <th>Usuario</th>
+                            <th>Contraseña</th>
+                        </tr>
+                    </thead> 
+                    <tbody id="tablaEmpleadoInactivos">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+</html>

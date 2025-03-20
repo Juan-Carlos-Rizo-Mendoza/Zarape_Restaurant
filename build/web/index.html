@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!--
+            versión 2.0
+            fecha: 25/01/2025
+            autor: Saul Villeda Lozada
+            cambios:
+                se modifico el input password para un icono y mostrar la contraseña
+                se añadio la libreria cloudflare para obtener el icono
+        -->
+
+        <title>Iniciar Sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style_log_in.css">
+        <link rel="icon" type="image/jpg" href="imagenes/imagotipo.jpg">
+        <!-- Incluir Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <script src="js/main.js"></script>   
+        <script src="js/sesion.js"></script>
+    </head>
+
+    <body onload="servicioLogIn()">    
+        <div class="contenedor">
+            <img src="imagenes/zarape-oficial.png" alt="logo el zarape">
+            <h1>Iniciar Sesión</h1>
+            <label for="usuario">Usuario</label><br>
+            <input type="text" id="usuario" required> <br>
+            <br>
+            <label for="contrasenia">Contraseña</label><br>
+            <div class="input-container">
+                <input type="password" id="contrasenia" required>
+                <i id="toggleVisibility" class="fas fa-eye"></i> <!-- Icono para mostrar/ocultar -->
+            </div>  
+            <button onclick="controladorLogIn.logIn()">
+                <strong>Iniciar Sesión</strong>
+            </button>         
+        </div>
+    </body>
+
+</html>

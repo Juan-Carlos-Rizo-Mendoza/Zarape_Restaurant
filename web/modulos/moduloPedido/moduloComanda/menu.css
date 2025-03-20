@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: flex; /* Usamos Flexbox */
+    flex-direction: column; /* Primero colocamos los elementos en columna */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.div1 {
+    background-image: url(../../../imagenes/mix-guacamole.jpg);
+    background-color: #FA4032;
+    padding: 7%;
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen */
+    text-align: center; /* Si quieres centrar el contenido dentro del div */
+}
+
+/* Contenedor para div2 y div3 */
+.content {
+    display: flex; /* Colocamos div2 y div3 en fila */
+    flex: 1; /* Ocupa el espacio restante después de div1 */
+}
+
+.div2 {    
+    margin-left: 1%;
+    width: 35%; /* Abarca el 25% del ancho */
+    background-color: #f4f4f4; /* Color de fondo para distinguirlo */
+    padding: 1%; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+.div3 {
+    margin: 0% 2% 3% 2%;
+    flex: 1; /* Ocupa el resto del espacio (75%) */
+    background-color: #ffffff; /* Color de fondo para distinguirlo */
+    padding: 1%; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+/* Estilos adicionales para botones */
+#btnComprar {
+    padding: 4%;
+    background-color: #FA4032;
+    color: white;
+    border-radius: 30px;
+    border-color: #FA4032;
+}
+
+#btnComprar:hover {
+    cursor: pointer;
+    background-color: #f87369;
+}
+
+#btnCancelar{
+    margin-right: 8%;
+    background-color: white;
+    color: #FAAF08;
+    border-radius: 30px;
+    padding: 4%;
+    border-color: #FAAF08;
+}
+
+#btnCancelar:hover{
+    cursor: pointer;
+    background-color: #f9faa5;
+    color:#FA812F;
+    
+}
+
+#btnAnadir{
+    padding: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: white;
+    border-color: #FA812F;
+    border-radius: 50px;
+    color:#FA812F;    
+}
+
+#btnAnadir:hover{
+    cursor: pointer;
+    background-color: #fadea5;
+}
+
+#btnRestar{
+    padding: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: white;
+    border-color: #FA812F;
+    border-radius: 50px;
+    color:#FA812F;    
+}
+
+#btnRestar:hover{
+        cursor: pointer;
+    background-color: #fadea5;
+}
+
+.grid-container {
+    display: grid; /* Activamos CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
+    gap: 1%; /* Espacio entre los elementos */
+    margin-top: 1%; /* Espaciado superior */
+}
+
+.grid-container > div {
+    background-color: #f9f9f9; /* Fondo de cada elemento */
+    padding: 2%; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+}
+
+#volver{
+    background-color: white;
+    border: none;
+}
+
+#btnMenu:hover{
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex; /* Usa Flexbox */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    margin-bottom: 1%; /* Espaciado opcional debajo del contenedor */
+}
+
+#volver {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Elimina el padding predeterminado del botón */
+}
+
+#btnMenu {
+    width: 34px; /* Ajusta el tamaño de la imagen */
+    height: 34px; /* Mantén la proporción */
+}

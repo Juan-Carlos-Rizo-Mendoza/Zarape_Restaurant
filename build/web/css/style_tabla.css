@@ -1,0 +1,189 @@
+/* 
+    Created on : 7 nov 2024, 8:24:14 p.m.
+    Author     : sault
+*/
+
+/* Contenedor principal */
+#forms {
+    width: 85%;
+    max-width: 900px; /* Limitamos el tamaño del formulario */
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño de las columnas */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas */
+    gap: 20px;
+}
+
+/* Estilo de cada columna */
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-column label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5.5%;
+
+}
+
+.form-column input,
+.form-column select {
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón */
+form button {
+    padding: 5px 20px;
+    background-color: #FA4032;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 20%;
+}
+
+#btnCargarFoto{
+    width: 90%;   
+    background-color: #FAAF08;    
+}
+
+.containerInput img{
+    width: 3%;
+}
+
+.tabla table {
+    border: solid 1px #000000;
+    border-radius: 10px;
+}
+
+.tabla th{
+    background-color: #CECECE;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+}
+
+.tabla td{
+    
+}
+
+.tabla td:hover{
+    cursor: pointer
+}
+
+@media (max-width: 768px) {
+    #forms {
+    width: 85%;
+    max-width: 600px; /* Limitamos el tamaño del formulario */
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr); /* Crea 4 columnas */
+        gap: 1px;
+    }
+
+    form button {
+        padding: 5px 20px;
+        background-color: #FA4032;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 10px;
+        margin-top: 10px;
+        width: 40%;
+    }
+
+    .tabla table {
+        font-size: 14px; /* Reducir el tamaño de texto */
+    }
+
+    .tabla th, .tabla td {
+        padding: 1px; /* Reducir el relleno */
+    }
+
+    .form-column label {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 2%;
+
+    }
+
+    .form-column input,
+    .form-column select {
+        margin-left: -50%;
+        padding: 2px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
+
+
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+    #forms {
+        padding: 10px 5px;
+    }
+
+    .form-row {
+
+        grid-template-columns: repeat(2, 1fr); /* Crea 4 columnas */
+        gap: 1px;
+    }
+
+    form button {
+        padding: 5px 20px;
+        background-color: #FA4032;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 10px;
+        margin-top: 10px;
+        width: 25%;
+    }
+
+    .tabla table {
+        font-size: 8px; /* Reducir el tamaño de texto */
+    }
+
+    .tabla th, .tabla td {
+        padding: 1px; /* Reducir el relleno */
+    }
+
+    .form-column label {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 0%;
+
+    }
+
+    .form-column input,
+    .form-column select {
+        padding: 2px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+}

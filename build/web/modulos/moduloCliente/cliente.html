@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <div class="content">
+        <h2>Clientes</h2>
+        <div class="containerInput">
+            <img src="imagenes/buscar.png" alt="buscar">
+            <input  type="text" placeholder="Buscar">
+
+        </div>
+        <br>
+
+        <div id="forms">
+            <form>
+                <div class="form-row">
+                    <div class="form-column col-1">
+                        <label for="idCliente">Id</label>
+                        <br>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <label for="apellidos">Apellidos</label>
+                        <br>
+                        <label for="telefono">Telefono</label>
+                        <br>
+                    </div>
+
+                    <div class="form-column col-2">
+                        <input type="number" id="idCliente" name="idCliente" disabled>
+                        <br>
+                        <input type="text" id="nombre" name="nombre">
+                        <br>
+                        <input type="text" id="apellidos" name="apellidos">
+                        <br>
+                        <input type="text" id="telefono" name="telefono"><br>
+                    </div>
+
+                    <div class="form-column col-3">
+                        <label for="estado">Estado</label>         
+                        <br>
+                         <label for="ciudad">Ciudad</label>
+                         <br>
+                         <label for="nombreUsu">Nombre Usuario</label>
+                         <br>
+                         <label for="contrasenia">Contraseña</label>
+                    </div>
+
+                    <div class="form-column col-4">
+                        <div>
+                            <select id="estados">
+                                <option value="">--Selecciona un estado--</option>
+                                <!-- Los estados se cargarán aquí -->
+                            </select>
+                        </div>                     
+                        <br>
+                        <div>                                
+                            <select id="ciudades">
+                                <option value="">--Selecciona un ciudad--</option>
+                                <!-- Las ciudades se cargarán aquí -->
+                            </select>
+                        </div>
+                        <br>
+                        <input type="text" id="nombreUsu" name="nombreUsu">
+                        <br>
+                        <input type="text" id="contrasenia" name="contrasenia"><br>
+                    </div>
+
+                </div>
+                
+                <button type="button" onclick="agregarCliente()">Agregar</button>
+                <button type="button" onclick="actualizarCliente()">Actualizar</button>
+                <button type="button" onclick="eliminarCliente()">Eliminar</button>
+                
+            </form> 
+        </div>
+
+        <div class="tabla">
+            <h3>Clientes activos</h3>
+            <table id="tabla-clientes">
+                <thead>
+                    <tr>                        
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>Ciudad</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaClientesActivos">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla">
+            <h3>Clientes inactivos</h3>
+            <table id="tabla-clientes">
+                <thead>
+                    <tr>                        
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>Ciudad</th>
+                        <th>Usuario</th>
+                        <th>Contraseña</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaClientesInactivos">
+                </tbody>
+            </table>
+        </div>
+
+    </div> 
+</html>

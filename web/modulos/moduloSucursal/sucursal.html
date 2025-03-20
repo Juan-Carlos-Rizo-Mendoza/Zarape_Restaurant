@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <body>
+        <div class="content">
+            <h2>Sucursal</h2>
+            <div class="containerInput">
+                <img src="imagenes/buscar.png" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <br>
+            <div id="forms">
+                <form>
+                    <div class="form-row">
+                        <!-- Columna izquierda -->
+                        <div class="form-column col-1">
+                            <label for="idSucursal">ID:</label>
+                            <br>
+                            <label for="nombre">Nombre:</label>
+                            <br>
+                            <label for="latitud">Latitud:</label>
+                            <br>
+                            <label for="longitud">Longitud:</label>
+                            <br>
+                            <label>Selecciona un Estado:</label>
+                            
+                            <br>
+                            <label for="foto">Foto:</label>
+                            <br>
+                        </div>
+                        <div class="form-column col-2">
+                            <input type="text" id="idSucursal" readonly disabled>
+                            <br>
+                            <input type="text" id="nombre" required>
+                            <br>
+                            <input type="text" id="latitud" required>
+                            <br>
+                            <input type="text" id="longitud" required>
+                            <br>
+                            <div>
+                                <select id="estados">
+                                    <option value="">--Selecciona un estado--</option>
+                                    <!-- Los estados se cargarán aquí -->
+                                </select>
+                            </div>
+                            <br><br>
+                            <br>
+                            <input type="file" id="inputFileFotoSucursal" style="display:none;" required>
+                            <img id="imgFoto" alt="Foto" style="max-width: 200px;" src="imagenes/camera.png">
+                            <textarea id="txaFoto" rows="10" cols="10" style="display: none;"></textarea>
+                            <button type="button" id="btnCargarFoto">Cargar Foto</button>
+                            <br>
+                        </div>
+                        <!-- Columna derecha -->
+                        <div class="form-column col-3">
+                            <label for="urlWeb">Url Web:</label>
+                            <br>
+                            <label for="horarios">Horarios:</label>
+                            <br>
+                            <label for="calle">Calle:</label>
+                            <br>
+                            <label for="numCalle">Número Calle:</label>
+                            <br>
+                            <label for="colonia">Colonia:</label>
+                            <br>
+                            <label>Ciudad:</label>                            
+                            <br>
+                        </div>
+                        <div class="form-column col-4">
+                            <input type="text" id="urlWeb" required>
+                            <br>
+                            <input type="text" id="horarios" required>
+                            <br>
+                            <input type="text" id="calle" required>
+                            <br>
+                            <input type="text" id="numCalle" required>
+                            <br>
+                            <input type="text" id="colonia" required>
+                            <br>
+                            <div>                                
+                                <select id="ciudades">
+                                    <option value="">--Selecciona una ciudad--</option>
+                                    <!-- Las ciudades se cargarán aquí -->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" id="agregar" onclick="agregarSucursal()">Agregar</button>
+                    <button type="button" id="btnActualizar" onclick="actualizarSucursal()">Actualizar</button>
+                    <!-- Botón de eliminar -->
+                    <button type="button" id="btnEliminar" onclick="eliminarSucursal()">Eliminar</button>                    
+                </form>
+            </div>
+            <br>
+            
+            <h3>Sucursales activas</h3>
+            <div class="tabla">
+                <div id="renglon">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Latitud</th>
+                                <th>Longitud</th>
+                                <th>Foto</th>
+                                <th>Url Web</th>
+                                <th>Horarios</th>
+                                <th>Número Calle</th>
+                                <th>Colonia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detalleSucursal">
+                            <!-- Aquí se cargarán los datos dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Contenedor de botones de acción (Actualizar y Eliminar) -->
+            </div>
+            <br>
+            <h3>Sucursales inactivas</h3>
+            <div class="tabla">
+                <div id="renglon">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Latitud</th>
+                                <th>Longitud</th>
+                                <th>Foto</th>
+                                <th>Url Web</th>
+                                <th>Horarios</th>
+                                <th>Número Calle</th>
+                                <th>Colonia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detalleSucursalInactivo">
+                            <!-- Aquí se cargarán los datos dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Contenedor de botones de acción (Actualizar y Eliminar) -->
+            </div>
+        </div>
+    </body>
+</html>
